@@ -52,7 +52,7 @@
     
     [self setupVBOAndShaders];
     
-    [self startRenderIfNeedRepeat:NO];
+//    [self startRenderIfNeedRepeat:NO];
 }
 
 - (void)setupLayer {
@@ -99,8 +99,8 @@
     CGFloat scale = [[UIScreen mainScreen] scale];
     glViewport(self.frame.origin.x * scale, self.frame.origin.y * scale, self.frame.size.width * scale, self.frame.size.height * scale);
     
-    self.shaderProgram = [self loadVertexShaders:[[NSBundle mainBundle] pathForResource:@"shaderv_varing" ofType:@"vsh"]
-                                 fragmentShaders:[[NSBundle mainBundle] pathForResource:@"shaderf_varing" ofType:@"fsh"]];
+    self.shaderProgram = [self loadVertexShaders:[[NSBundle mainBundle] pathForResource:@"shaderv_varying" ofType:@"vsh"]
+                                 fragmentShaders:[[NSBundle mainBundle] pathForResource:@"shaderf_varying" ofType:@"fsh"]];
     
     glLinkProgram(self.shaderProgram);
     glUseProgram(self.shaderProgram);
@@ -124,7 +124,6 @@
     self.inputColor = glGetAttribLocation(self.shaderProgram, "inputColor");
     glEnableVertexAttribArray(self.inputColor);
     glVertexAttribPointer(self.inputColor, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void *)(3 * sizeof(float))); // 最后一个参数终于理解了，是指的需要一个从头开始的偏移
-    
     
     
 //    self.fragmentUniform = glGetUniformLocation(self.shaderProgram, "ourColor");// uniform相当于常量，他的输入在整个一次shader运行（每一个像素遍历一遍）的时候是不会变的，通过这种方式来绑定CPU和GPU上对应的参数对应的shader为shaderf_Uniform.fsh，fragment Shader里面无法声明变量，只能声明uniform或者vertexShader传进来一个 varying

@@ -1,6 +1,6 @@
 
-attribute vec3 position;
-attribute vec3 intputColor;
+lowp attribute vec3 position;
+lowp attribute vec3 intputColor;
 
 varying vec3 outputColor;
 

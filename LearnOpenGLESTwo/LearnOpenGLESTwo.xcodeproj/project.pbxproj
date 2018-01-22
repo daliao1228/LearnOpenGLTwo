@@ -17,7 +17,7 @@
 		2978701D1F565BC900B028AE /* LearnOpenGLESTwoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2978701C1F565BC900B028AE /* LearnOpenGLESTwoUITests.m */; };
 		299C46051F5FD1E700C3858A /* shaderf_Uniform.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 299C46041F5FD1E700C3858A /* shaderf_Uniform.fsh */; };
 		29CCEEB11F5F99720040C130 /* LearnView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29CCEEB01F5F99720040C130 /* LearnView.m */; };
-		29CCEEB51F5F99F40040C130 /* shaderf_varing.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 29CCEEB21F5F99F40040C130 /* shaderf_varing.fsh */; };
+		29CCEEB51F5F99F40040C130 /* shaderf_varying.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 29CCEEB21F5F99F40040C130 /* shaderf_varying.fsh */; };
 		29CCEEB71F5F99F40040C130 /* shaderv_varying.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 29CCEEB41F5F99F40040C130 /* shaderv_varying.vsh */; };
 /* End PBXBuildFile section */
 
@@ -58,7 +58,7 @@
 		299C46041F5FD1E700C3858A /* shaderf_Uniform.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shaderf_Uniform.fsh; sourceTree = "<group>"; };
 		29CCEEAF1F5F99720040C130 /* LearnView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LearnView.h; sourceTree = "<group>"; };
 		29CCEEB01F5F99720040C130 /* LearnView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LearnView.m; sourceTree = "<group>"; };
-		29CCEEB21F5F99F40040C130 /* shaderf_varing.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shaderf_varing.fsh; sourceTree = "<group>"; };
+		29CCEEB21F5F99F40040C130 /* shaderf_varying.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shaderf_varying.fsh; sourceTree = "<group>"; };
 		29CCEEB41F5F99F40040C130 /* shaderv_varying.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shaderv_varying.vsh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,8 +120,8 @@
 				297870081F565BC900B028AE /* Info.plist */,
 				29CCEEAF1F5F99720040C130 /* LearnView.h */,
 				29CCEEB01F5F99720040C130 /* LearnView.m */,
-				29CCEEB21F5F99F40040C130 /* shaderf_varing.fsh */,
 				29CCEEB41F5F99F40040C130 /* shaderv_varying.vsh */,
+				29CCEEB21F5F99F40040C130 /* shaderf_varying.fsh */,
 				299C46041F5FD1E700C3858A /* shaderf_Uniform.fsh */,
 				29786FF71F565BC900B028AE /* Supporting Files */,
 			);
@@ -268,7 +268,7 @@
 				297870041F565BC900B028AE /* Assets.xcassets in Resources */,
 				29CCEEB71F5F99F40040C130 /* shaderv_varying.vsh in Resources */,
 				297870021F565BC900B028AE /* Main.storyboard in Resources */,
-				29CCEEB51F5F99F40040C130 /* shaderf_varing.fsh in Resources */,
+				29CCEEB51F5F99F40040C130 /* shaderf_varying.fsh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
